@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="lab_test.css"/>
+</head>
+<body>
+    <div class="main_container">
+        <div class="left_container">
+            <form>
+                <h1>1. Your Contact Details</h1>
+                <div>
+                    <input type="text" name="firstname" id="firstname" placeholder="Full Name" required>
+                </div>
+                <div>
+                    <input type="text" name="firstname" id="firstname" placeholder="Patient Id if exist" required>
+                </div>
+                <div>
+                    <input type="tel" name="phone" id="phone" placeholder="Contact Number"
+                    pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$" required>
+                    <label for="tel">Phone No.</label>
+                    <div class="requirements"> Must be a valid Phone Number!</div>
+                    </div>
+                    <div>
+                    
+                    <input type="email" name="email" id="email" placeholder="Email ID" required>
+                    <label for="email">Email</label>
+                    <div class="requirements"> Must be a valid email addres!</div>
+                    </div>
+            </form>
+        </div>
+        <div class="right_container">
+            <div class="img_box"><img src="images/3.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
